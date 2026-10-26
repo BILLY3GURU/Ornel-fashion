@@ -18,10 +18,10 @@ export const CategoryPillars: React.FC = () => {
     {
       id: 'apparel',
       title: 'Branded Clothes & Couture',
-      subtitle: 'Bespoke Italian velvet suits, cashmere atelier coats & mulberry silk blouses',
-      image: '/src/assets/images/product_apparel_couture_1793011669251.jpg',
-      itemCount: '4 Runway Essentials',
-      tag: 'Milan & Paris Atelier'
+      subtitle: 'Crystal-embroidered modest abayas, halterneck evening gowns & bespoke tailoring',
+      image: '/src/assets/images/ornel_showcase_1.jpg',
+      itemCount: '7 Runway Essentials',
+      tag: 'Atelier Couture & Modest'
     },
     {
       id: 'cash-systems',

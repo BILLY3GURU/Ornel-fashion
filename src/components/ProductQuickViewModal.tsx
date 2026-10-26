@@ -15,11 +15,17 @@ export const ProductQuickViewModal: React.FC = () => {
 
   if (!quickViewProduct) return null;
 
+  const [activeImage, setActiveImage] = useState<string>(quickViewProduct.image);
   const [selectedVariant, setSelectedVariant] = useState<string>(
     quickViewProduct.variants?.[0]?.name || ''
   );
   const [quantity, setQuantity] = useState<number>(1);
   const [activeTab, setActiveTab] = useState<'description' | 'specs'>('description');
+
+  const allImages = [
+    quickViewProduct.image,
+    ...(quickViewProduct.additionalImages || [])
+  ];
 
   const isFavorite = isWishlisted(quickViewProduct.id);
 
@@ -63,25 +69,46 @@ export const ProductQuickViewModal: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
           
-          {/* Left Column: Image Frame */}
-          <div className="md:col-span-6 bg-stone-100 relative min-h-[320px] md:min-h-[480px]">
-            <img
-              src={quickViewProduct.image}
-              alt={quickViewProduct.name}
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
-            {quickViewProduct.badge && (
-              <div className="absolute top-4 left-4 bg-stone-950 text-white text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded">
-                {quickViewProduct.badge}
+          {/* Left Column: Image Frame & Thumbnails */}
+          <div className="md:col-span-6 bg-stone-100 flex flex-col justify-between p-4">
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-stone-200">
+              <img
+                src={activeImage}
+                alt={quickViewProduct.name}
+                className="w-full h-full object-cover transition-all duration-300"
+                referrerPolicy="no-referrer"
+              />
+              {quickViewProduct.badge && (
+                <div className="absolute top-3 left-3 bg-stone-950 text-white text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded">
+                  {quickViewProduct.badge}
+                </div>
+              )}
+              <button
+                onClick={() => toggleWishlist(quickViewProduct.id)}
+                className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 shadow-sm flex items-center justify-center text-stone-700 hover:text-red-600 transition-colors"
+              >
+                <Heart className={`w-4 h-4 ${isFavorite ? 'fill-red-600 text-red-600' : ''}`} />
+              </button>
+            </div>
+
+            {/* Thumbnails if multiple images exist */}
+            {allImages.length > 1 && (
+              <div className="flex items-center gap-2 mt-3 overflow-x-auto pb-1">
+                {allImages.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveImage(img)}
+                    className={`w-14 h-14 rounded-md overflow-hidden border-2 transition-all shrink-0 ${
+                      activeImage === img
+                        ? 'border-stone-900 shadow-sm scale-105'
+                        : 'border-transparent opacity-60 hover:opacity-100'
+                    }`}
+                  >
+                    <img src={img} alt="Product view" className="w-full h-full object-cover" />
+                  </button>
+                ))}
               </div>
             )}
-            <button
-              onClick={() => toggleWishlist(quickViewProduct.id)}
-              className="absolute top-4 right-4 md:right-auto md:left-4 md:top-14 w-9 h-9 rounded-full bg-white/90 shadow-sm flex items-center justify-center text-stone-700 hover:text-red-600 transition-colors"
-            >
-              <Heart className={`w-4 h-4 ${isFavorite ? 'fill-red-600 text-red-600' : ''}`} />
-            </button>
           </div>
 
           {/* Right Column: Contiguous Purchase Module */}

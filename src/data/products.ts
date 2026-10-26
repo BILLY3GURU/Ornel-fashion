@@ -1,6 +1,148 @@
 import { Product } from '../types';
 
 export const PRODUCTS: Product[] = [
+  // USER SHOWCASE RELEASES - FASHION & BEAUTY
+  {
+    id: 'app-showcase-01',
+    name: 'Imperial Noir Crystal Embroidered Hooded Abaya',
+    category: 'apparel',
+    categoryLabel: 'Branded Apparel',
+    subtitle: 'Luxury midnight black modest hooded jalabiya with shimmering hand-beaded silver crystal motifs',
+    price: 120,
+    originalPrice: 145,
+    image: '/src/assets/images/ornel_showcase_1.jpg',
+    additionalImages: ['/src/assets/images/ornel_showcase_4.jpg'],
+    badge: 'New Arrival',
+    description: 'An exquisite showpiece of modest couture tailoring. Crafted from premium breathable Dubai crepe and cascading into a regal cape silhouette, heavily embellished with reflective silver crystals along the bodice and hood.',
+    features: [
+      'High-grade premium crepe fabric with graceful natural drape',
+      'Intricate silver rhinestone and crystal embroidery that catches the light beautifully',
+      'Comfortable batwing sleeves and matching modest hooded veil',
+      'Ideal for festive Eid celebrations, formal evening events, and luxury modest wear'
+    ],
+    specs: {
+      'Fabric': '100% High-Density Emirati Crepe with Silk Touch',
+      'Embellishment': 'Heat-Pressed Silver Crystal Rhinestones',
+      'Silhouette': 'Flowing Modest Kaftan with Matching Hood',
+      'Care': 'Gentle hand wash or delicate dry clean'
+    },
+    variants: [
+      { name: 'Midnight Noir (Black) · Standard Free Size' },
+      { name: 'Royal Mustard Gold (Yellow) · Standard Free Size' },
+      { name: 'Noir Ensemble with Inner Dress Set', priceModifier: 25 }
+    ],
+    inStock: true,
+    stockCount: 15,
+    rating: 5.0,
+    reviewCount: 48,
+    isFeatured: true
+  },
+  {
+    id: 'app-showcase-02',
+    name: 'Siren Chocolate Ruched Halterneck Evening Gown',
+    category: 'apparel',
+    categoryLabel: 'Branded Apparel',
+    subtitle: 'Sculptural plunge halterneck maxi dress with body-contouring ruched hips and draped center tie',
+    price: 95,
+    originalPrice: 120,
+    image: '/src/assets/images/ornel_showcase_2.jpg',
+    badge: 'Trending',
+    description: 'Turn heads at every gala and VIP dinner. Cut from high-elasticity double-layered spandex jersey in rich chocolate mocha, featuring an alluring plunge halterneck, corset-inspired ruching to accentuate curves, and an elongated floor-skimming skirt.',
+    features: [
+      'Ultra-flattering double-layered body-contouring jersey fabric',
+      'Dramatic plunge neckline with adjustable neck halter ties',
+      'Intricate horizontal ruching across the waist and hips for a seamless hourglass fit',
+      'Draped center sash detail adding movement and luxury runway allure'
+    ],
+    specs: {
+      'Material': '92% Polyester, 8% Elastane Double-Knit Jersey',
+      'Length': 'Floor-length (150cm from shoulder)',
+      'Stretch Level': 'High Stretch (Hugs curves comfortably)',
+      'Color': 'Rich Chocolate Espresso'
+    },
+    variants: [
+      { name: 'Size Small (US 2-4 / EU 34-36)' },
+      { name: 'Size Medium (US 6-8 / EU 38-40)' },
+      { name: 'Size Large (US 10-12 / EU 42-44)' },
+      { name: 'Size X-Large (US 14 / EU 46)' }
+    ],
+    inStock: true,
+    stockCount: 10,
+    rating: 4.9,
+    reviewCount: 37,
+    isFeatured: true
+  },
+  {
+    id: 'cosm-showcase-01',
+    name: 'ORNEL Virgin HD Lace Curly Glam Wig & Beauty Unit',
+    category: 'cosmetics',
+    categoryLabel: 'Cosmetics & Beauty',
+    subtitle: '100% Unprocessed virgin human hair 13x4 HD transparent lace deep curly beauty wig',
+    price: 140,
+    originalPrice: 175,
+    image: '/src/assets/images/ornel_showcase_3.jpg',
+    badge: 'Best Seller',
+    description: 'Transform your look with salon-grade hair beauty luxury. Crafted from 100% cuticles-aligned virgin human hair with lush, bouncy deep curls that maintain their bounce wash after wash. The ultra-thin HD undetectable lace melts seamlessly into all skin tones.',
+    features: [
+      '100% Raw unprocessed human hair, completely tangle-free and zero shedding',
+      'Ultra-thin 13x4 HD Swiss transparent lace that melts invisibly on the scalp',
+      'Pre-plucked natural hairline with delicate realistic baby hairs',
+      'High 180% density for voluminous, lustrous crown coverage',
+      'Can be bleached to #613 blonde, custom dyed, straightened, and restyled'
+    ],
+    specs: {
+      'Hair Texture': 'Deep Wave / Jerry Curly Lustre',
+      'Lace Type': '13x4 HD Undetectable Swiss Lace Frontal',
+      'Cap Size': 'Medium (22.5" with adjustable elastic bands & combs)',
+      'Density': '180% Full Boutique Density'
+    },
+    variants: [
+      { name: '14 Inches · 180% Density' },
+      { name: '16 Inches · 180% Density', priceModifier: 25 },
+      { name: '18 Inches · 180% Density', priceModifier: 45 },
+      { name: '20 Inches · 200% High Density', priceModifier: 70 }
+    ],
+    inStock: true,
+    stockCount: 12,
+    rating: 5.0,
+    reviewCount: 63,
+    isFeatured: true
+  },
+  {
+    id: 'app-showcase-03',
+    name: 'Royal Mustard Gold Crystal Hooded Kaftan Ensemble',
+    category: 'apparel',
+    categoryLabel: 'Branded Apparel',
+    subtitle: 'Vibrant golden mustard modest jalabiya featuring elaborate silver beaded crystal detailing',
+    price: 120,
+    originalPrice: 145,
+    image: '/src/assets/images/ornel_showcase_4.jpg',
+    additionalImages: ['/src/assets/images/ornel_showcase_1.jpg'],
+    badge: 'Limited Edition',
+    description: 'Radiate regal poise and charm. Tailored in an exquisite warm mustard gold palette, embellished with hand-crafted crystal motifs down the front placket, sleeves, and hooded veil for a breathtaking festive presence.',
+    features: [
+      'Luminous golden mustard tone tailored from lightweight crepe fabric',
+      'Ornate mirrored silver rhinestone ornamentation on hood and bodice',
+      'Full-length modest coverage with breezy batwing drape',
+      'Matching matching under-skirt lining for complete opacity'
+    ],
+    specs: {
+      'Fabric': 'Premium Crepe de Chine',
+      'Embroidery': 'Silver Beaded Floral Lattice Motifs',
+      'Fit': 'Modest Free Size (Suits sizes S through XXL comfortably)',
+      'Origin': 'Atelier Showroom Direct'
+    },
+    variants: [
+      { name: 'Standard Modest Free Size (S to XXL)' },
+      { name: 'Set with Matching Mustard Chiffon Scarf', priceModifier: 15 }
+    ],
+    inStock: true,
+    stockCount: 9,
+    rating: 4.9,
+    reviewCount: 29,
+    isFeatured: true
+  },
+
   // 1. COSMETICS & BEAUTY
   {
     id: 'cosm-01',

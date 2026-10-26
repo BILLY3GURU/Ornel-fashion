@@ -9,6 +9,7 @@ import { AnnouncementBar } from './components/AnnouncementBar';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { CategoryPillars } from './components/CategoryPillars';
+import { ShowroomSpotlight } from './components/ShowroomSpotlight';
 import { ProductCatalog } from './components/ProductCatalog';
 import { CashSystemsSpotlight } from './components/CashSystemsSpotlight';
 import { ContactSellerSection } from './components/ContactSellerSection';
@@ -37,6 +38,9 @@ export default function App() {
 
           {/* 3 Pillars: Cosmetics, Apparel, Cash Systems */}
           <CategoryPillars />
+
+          {/* New Showroom Collection Spotlight (Featuring Real Boutique Items) */}
+          <ShowroomSpotlight />
 
           {/* Interactive Product Catalog with filters, search, quick view & direct WhatsApp inquiry */}
           <ProductCatalog />
