@@ -10,8 +10,11 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Luxury midnight black modest hooded jalabiya with shimmering hand-beaded silver crystal motifs',
     price: 120,
     originalPrice: 145,
-    image: '/src/assets/images/ornel_showcase_1.jpg',
-    additionalImages: ['/src/assets/images/ornel_showcase_4.jpg'],
+    image: 'https://res.cloudinary.com/dpskjlq9m/image/upload/v1793011868/WhatsApp_Image_2026-10-26_at_1.24.45_PM_1_vnxwqf.jpg',
+    additionalImages: [
+      'https://res.cloudinary.com/dpskjlq9m/image/upload/v1793011837/WhatsApp_Image_2026-10-26_at_1.24.45_PM_qukp3o.jpg',
+      '/assets/images/ornel_showcase_1.jpg'
+    ],
     badge: 'New Arrival',
     description: 'An exquisite showpiece of modest couture tailoring. Crafted from premium breathable Dubai crepe and cascading into a regal cape silhouette, heavily embellished with reflective silver crystals along the bodice and hood.',
     features: [
@@ -45,7 +48,8 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Sculptural plunge halterneck maxi dress with body-contouring ruched hips and draped center tie',
     price: 95,
     originalPrice: 120,
-    image: '/src/assets/images/ornel_showcase_2.jpg',
+    image: 'https://res.cloudinary.com/dpskjlq9m/image/upload/v1793011825/WhatsApp_Image_2026-10-26_at_1.24.44_PM_h6kek1.jpg',
+    additionalImages: ['/assets/images/ornel_showcase_2.jpg'],
     badge: 'Trending',
     description: 'Turn heads at every gala and VIP dinner. Cut from high-elasticity double-layered spandex jersey in rich chocolate mocha, featuring an alluring plunge halterneck, corset-inspired ruching to accentuate curves, and an elongated floor-skimming skirt.',
     features: [
@@ -80,7 +84,8 @@ export const PRODUCTS: Product[] = [
     subtitle: '100% Unprocessed virgin human hair 13x4 HD transparent lace deep curly beauty wig',
     price: 140,
     originalPrice: 175,
-    image: '/src/assets/images/ornel_showcase_3.jpg',
+    image: 'https://res.cloudinary.com/dpskjlq9m/image/upload/v1793011888/WhatsApp_Image_2026-10-26_at_1.24.46_PM_ekbhxl.jpg',
+    additionalImages: ['/assets/images/ornel_showcase_3.jpg'],
     badge: 'Best Seller',
     description: 'Transform your look with salon-grade hair beauty luxury. Crafted from 100% cuticles-aligned virgin human hair with lush, bouncy deep curls that maintain their bounce wash after wash. The ultra-thin HD undetectable lace melts seamlessly into all skin tones.',
     features: [
@@ -116,8 +121,11 @@ export const PRODUCTS: Product[] = [
     subtitle: 'Vibrant golden mustard modest jalabiya featuring elaborate silver beaded crystal detailing',
     price: 120,
     originalPrice: 145,
-    image: '/src/assets/images/ornel_showcase_4.jpg',
-    additionalImages: ['/src/assets/images/ornel_showcase_1.jpg'],
+    image: 'https://res.cloudinary.com/dpskjlq9m/image/upload/v1793011837/WhatsApp_Image_2026-10-26_at_1.24.45_PM_qukp3o.jpg',
+    additionalImages: [
+      'https://res.cloudinary.com/dpskjlq9m/image/upload/v1793011868/WhatsApp_Image_2026-10-26_at_1.24.45_PM_1_vnxwqf.jpg',
+      '/assets/images/ornel_showcase_4.jpg'
+    ],
     badge: 'Limited Edition',
     description: 'Radiate regal poise and charm. Tailored in an exquisite warm mustard gold palette, embellished with hand-crafted crystal motifs down the front placket, sleeves, and hooded veil for a breathtaking festive presence.',
     features: [

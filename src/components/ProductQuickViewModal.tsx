@@ -77,6 +77,12 @@ export const ProductQuickViewModal: React.FC = () => {
                 alt={quickViewProduct.name}
                 className="w-full h-full object-cover transition-all duration-300"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (quickViewProduct.additionalImages && quickViewProduct.additionalImages.length > 0 && target.src !== quickViewProduct.additionalImages[0]) {
+                    target.src = quickViewProduct.additionalImages[0];
+                  }
+                }}
               />
               {quickViewProduct.badge && (
                 <div className="absolute top-3 left-3 bg-stone-950 text-white text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded">

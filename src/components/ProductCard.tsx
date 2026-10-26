@@ -55,6 +55,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           referrerPolicy="no-referrer"
           loading="lazy"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (product.additionalImages && product.additionalImages.length > 0 && target.src !== product.additionalImages[0]) {
+              target.src = product.additionalImages[0];
+            } else if (!target.src.includes('cloudinary') && product.image.startsWith('/')) {
+              target.src = product.image.replace(/^\/src\//, '/');
+            }
+          }}
         />
 
         {/* Subtle Tag if available - Clean non-pill tag */}

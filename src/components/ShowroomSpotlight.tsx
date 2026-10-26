@@ -54,6 +54,12 @@ export const ShowroomSpotlight: React.FC = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (item.additionalImages && item.additionalImages.length > 0 && target.src !== item.additionalImages[0]) {
+                        target.src = item.additionalImages[0];
+                      }
+                    }}
                   />
                   
                   {/* Subtle Badge */}

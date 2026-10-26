@@ -19,7 +19,7 @@ export const CategoryPillars: React.FC = () => {
       id: 'apparel',
       title: 'Branded Clothes & Couture',
       subtitle: 'Crystal-embroidered modest abayas, halterneck evening gowns & bespoke tailoring',
-      image: '/src/assets/images/ornel_showcase_1.jpg',
+      image: 'https://res.cloudinary.com/dpskjlq9m/image/upload/v1793011868/WhatsApp_Image_2026-10-26_at_1.24.45_PM_1_vnxwqf.jpg',
       itemCount: '7 Runway Essentials',
       tag: 'Atelier Couture & Modest'
     },
