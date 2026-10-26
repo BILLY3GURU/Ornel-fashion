@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom smooth luxury touches */
+html {
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: #1c1917;
+  color: #fafaf9;
+}

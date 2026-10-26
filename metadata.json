@@ -1,0 +1,6 @@
+{
+  "name": "ORNEL Fashion",
+  "description": "Luxury boutique featuring curated cosmetics, designer branded clothing, and modern retail cash management POS systems. Direct WhatsApp inquiries and customer sales team support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
